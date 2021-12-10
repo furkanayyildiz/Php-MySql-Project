@@ -13,7 +13,7 @@
         mysqli_free_result($result);
         mysqli_close($conn);
 
-        //print_r(explode(',', $pizzas[0]['ingredients']));  ***************  bu kısmı sor öğren ************
+        //print_r(explode(',', $pizzas[0]['ingredients']));  ***************  explode search ************
 
 
 ?>
@@ -32,6 +32,7 @@
 
 				<div class="col s6 md3">
 					<div class="card z-depth-0">
+                                                <img src="img/pizza.svg"class="pizza">
 						<div class="card-content center">
 							<h5><?php echo htmlspecialchars($pizza['title']); ?></h5>
 							<ul class = "grey-text">
